@@ -1,0 +1,23 @@
+//Tabs(filters)
+.filter-options{
+  border-bottom: 1px solid $color-lightgray2;
+  margin:0;padding:0;display:flex;
+  li{display: inline-block;vertical-align: middle;cursor:pointer;float:left;box-sizing: border-box;width: 50%;
+    .filter-option {
+      display: block;
+      line-height: 4.2rem;
+      color: $color-lightgray2;
+      cursor: pointer;
+      margin-bottom: -2px;
+      border-bottom: 3px solid transparent;
+      height: 4.2rem;
+      padding: 0 1.3rem;
+      transition: .4s;
+      @extend %ellipsis;
+    }
+    &:hover, &.active{
+      .filter-option {color: $color-dark;border-bottom-color: $color-dark;}
+    }
+    &.active{ .filter-option {cursor: default}}
+  }
+}

@@ -1,0 +1,52 @@
+//BUTTONS
+.btn, button{outline:none;user-select: none}
+
+.btn{display: inline-block;vertical-align: middle;
+  padding: 1.7rem 4.3rem;margin: 0 0 1.8rem;
+  text-align: center;font-family:$font1b;font-size: 1.6rem;line-height:1.38;font-weight: bold;
+  letter-spacing: .05rem;
+  white-space: nowrap;cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  min-width: 12.5rem;max-width: 100%;
+  border-radius: 3rem;border: .2rem solid $color-dark;color: $color-dark;background-color: transparent;
+  transition:.3s linear;
+  @media (hover: hover) {
+    &:hover{background-color:transparent;border-color: $color-gray;color:$color-gray;}
+  }
+
+  &:active{transform: scale(.96);}
+
+  &.btn--small{padding:.7rem 1.8rem !important;}
+  &.btn--medium{padding:1.1rem 2.9rem}
+
+  .ico{font-size:2.4rem;width:2.8rem;height:2rem;
+    vertical-align: middle;display: inline-block;margin-bottom: -.2rem;margin-top: -.4rem;
+    margin-left: -1.5rem;
+    & + span{line-height: 2rem; vertical-align: middle;display: inline-block;}
+  }
+  @media(max-width: 440px){padding:1.1rem 2.9rem;
+    &.btn--small{padding:.7rem 1.8rem}
+  }
+}
+
+
+.btn.btn-active-action, .btn.btn-black, .btn.btn--black, .btn.btn-primary,.btn.btn--primary .btn-main,.btn--main{
+  color: #fff;background:$color-dark;
+  &:hover{background: $color-gray;border-color: $color-gray;color: #fff;}
+  &.disabled,&:disabled{color:$color-lightgray2;background: $color-dark;border-color: $color-dark;}
+}
+
+
+
+//////////////////////
+.dark-bg{
+  .btn{background-color: transparent;border-color: #fff;color:#fff;
+    &:hover{color:$color-lightgray2;border-color:$color-lightgray2;}
+    &.disabled,&:disabled{color:$color-lightgray2;background:transparent;border-color:$color-lightgray2;cursor:default!important;}
+
+    &.btn--black, &.btn-black, &.btn-main, &.btn--main, &.btn-primary, &.btn--primary{
+      background-color: #fff;border-color: #fff;color:$color-dark;
+      &:hover{opacity: .6}
+    }
+  }
+}

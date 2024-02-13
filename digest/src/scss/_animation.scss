@@ -1,0 +1,82 @@
+@import "plugins/animate";
+
+@keyframes downCube{
+  0% {transform: translateY(-5em) scale(1,1);opacity: .1}
+  80%{transform: translateY(0) scale(1, 1);opacity:1}
+  90%{transform: translateY(.2em) scale(1.2,.7);opacity:1}
+  99%{transform: translateY(0) scale(1,1);opacity:1}
+  100%{transform: translateY(0) scale(1,1);opacity:1}
+}
+
+@keyframes moving-bg {
+  0%{transform: rotate(0deg)}
+  50%{transform: rotate(-8deg)}
+  100%{transform: rotate(0deg)}
+}
+
+@keyframes moving {
+  0%{transform: rotate(0deg)}
+  50%{transform: rotate(-8deg) scale(.8) translate(10rem, -10rem);}
+  100%{transform: rotate(0deg)}
+}
+
+@keyframes wiggle{
+  25%{transform:rotate(5deg)}
+  70%{transform:rotate(-3deg)}
+}
+
+@keyframes blink-animation {
+  0%{opacity: 1}
+  50%{opacity: .4}
+  100%{opacity: 1}
+}
+
+@keyframes ticker {
+  0% {-webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {-webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);visibility: hidden;
+  }
+}
+
+@keyframes spin-loader{ //DS - анимация при загрузке страницы
+  0% {transform:rotate(0deg)}
+  100%{transform:rotate(360deg)}
+}
+
+////////////////////// Animation ///////////////////
+@keyframes spin{
+  0%, 80%, 100%{background-color:#fff;}
+  40% {background-color:#fff}
+}
+
+
+//// page animation ///
+@keyframes zoomIn{from{opacity:0; -webkit-transform:scale3d(.3,.3,.3); transform:scale3d(.3,.3,.3); }
+  50%{opacity:1; }
+}
+.zoomIn{-webkit-animation-name:zoomIn; animation-name:zoomIn;}
+
+@keyframes shake {
+  0% {transform: translate(3px, 0);}
+  50% {transform: translate(-3px, 0);}
+  100% {transform: translate(0, 0);}
+}
+
+@keyframes shaking-wave {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(2px, 2px) rotate(2deg); }
+  50% { transform: translate(0, 0) rotate(0deg); }
+  75% { transform: translate(-2px, 2px) rotate(-2deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes shaking-wave2 {
+  0% { transform: translate(0, 0) rotate(20deg); }
+  25% { transform: translate(2px, 2px) rotate(22deg); }
+  50% { transform: translate(0, 0) rotate(20deg); }
+  75% { transform: translate(-2px, 2px) rotate(-18deg); }
+  100% { transform: translate(0, 0) rotate(20deg); }
+}

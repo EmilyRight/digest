@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="64px" viewBox="0 0 32 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>bookmark-sprite</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0 L20,0 L20,23.8387503 C20,24.9433198 19.1045695,25.8387503 18,25.8387503 C17.545857,25.8387503 17.105236,25.6841888 16.7506099,25.4004879 L10.624695,20.499756 C10.2594764,20.2075811 9.7405236,20.2075811 9.37530495,20.499756 L3.2493901,25.4004879 C2.38686622,26.090507 1.12828148,25.9506643 0.438262381,25.0881404 C0.154561504,24.7335143 1.37074889e-16,24.2928933 8.8817842e-16,23.8387503 L0,0 Z" id="path-1"></path>
+        <path d="M2,0 L2,22.7395171 C2,23.0156595 2.22385763,23.2395171 2.5,23.2395171 C2.62094665,23.2395171 2.7377938,23.1956774 2.82889169,23.1161207 L8.12591486,18.4901771 C9.22157081,17.5333298 10.7784292,17.5333298 11.8740851,18.4901771 L17.1711083,23.1161207 C17.3791007,23.2977626 17.6949617,23.2764012 17.8766036,23.0684088 C17.9561603,22.9773109 18,22.8604638 18,22.7395171 L18,0 L2,0 Z M0,0 L20,0 L20,23.8387503 C20,24.9433198 19.1045695,25.8387503 18,25.8387503 C17.545857,25.8387503 17.105236,25.6841888 16.7506099,25.4004879 L10.624695,20.499756 C10.2594764,20.2075811 9.7405236,20.2075811 9.37530495,20.499756 L3.2493901,25.4004879 C2.38686622,26.090507 1.12828148,25.9506643 0.438262381,25.0881404 C0.154561504,24.7335143 8.8817842e-16,24.2928933 0,23.8387503 L0,0 Z" id="path-3"></path>
+    </defs>
+    <g id="bookmark-sprite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/DesignSystem/Bookmark-Filled" transform="translate(0.000000, 32.000000)">
+            <g id="bookmark-filled" transform="translate(6.000000, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="Color/Dark" mask="url(#mask-2)" fill="#1F2229">
+                    <g transform="translate(-6.000000, 0.000000)" id="dark">
+                        <polygon points="0 0 32 0 32 32 0 32"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Icons/DesignSystem/Bookmark-Empty">
+            <g id="bookmark-empty" transform="translate(6.000000, 0.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Mask" fill-rule="nonzero"></g>
+                <g id="Color/Dark" mask="url(#mask-4)" fill="#1F2229">
+                    <g transform="translate(-6.000000, 0.000000)" id="dark">
+                        <polygon points="0 0 32 0 32 32 0 32"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

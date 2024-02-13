@@ -1,0 +1,122 @@
+@import "fonts";
+@import "vars";
+
+.h1,
+h1 {
+  font-size: 3.8rem;
+  line-height: 4.2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+  line-height: 1.12;
+  font-weight: bold;
+  font-family: $font2;
+  margin: 0 0 3.6rem;
+  color: $color-dark;
+  @media (max-width: 600px) {
+    font-size: 2.8rem;
+    line-height: 1.29;
+    margin: 0 0 2.4rem;
+  }
+}
+h3 {
+  font-size: 3.8rem;
+  line-height: 1.16;
+  font-weight: bold;
+  font-family: $font2;
+  color: $color-dark;
+  margin: 0 0 3.6rem;
+  @media (max-width: 600px) {
+    font-size: 2.8rem;
+    margin-bottom: 2.4rem;
+  }
+}
+h4 {
+  font-size: 2.8rem;
+  line-height: 1;
+  color: $color-dark;
+  margin: 0 0 1.8rem;
+  @media (max-width: 600px) {
+    font-size: 1.8rem;
+  }
+}
+.h5,
+h5 {
+  font-size: 2.2rem;
+  line-height: 1.27;
+  margin: 0 0 0.9rem;
+  @media (max-width: 600px) {
+    font-size: 1.8rem;
+  }
+}
+
+p,
+.subtitle {
+  font-size: 1.8rem;
+}
+p {
+  line-height: 1.22;
+  margin-bottom: 1.8rem;
+  margin-top: 0;
+  a {
+    text-decoration: underline;
+    color: #1f2229;
+  }
+}
+
+.br-desktop {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+ul.list {
+  padding-left: 0;
+  line-height: 1.38;
+  list-style: none;
+  li {
+    margin-bottom: 0.5em;
+    &:before {
+      margin-right: 0.64em;
+      width: 0.31em;
+      height: 0.31em;
+      background: $color-dark;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      top: -0.1em;
+      content: "";
+    }
+  }
+}
+ol.list {
+  padding-left: 0;
+  line-height: 1.38;
+  counter-reset: list;
+  list-style: none;
+  li {
+    margin-bottom: 0.8rem;
+    &:before {
+      counter-increment: list;
+      content: counter(list) ".";
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
