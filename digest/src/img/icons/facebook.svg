@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="64px" viewBox="0 0 32 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Sprites/Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons/Sprites/Facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="facebook-unactive-small" transform="translate(2.000000, 34.000000)">
+            <circle id="Oval" fill="#C1C9DA" cx="14" cy="14" r="14"></circle>
+            <path d="M17.0948707,9.6981198 L15.940729,9.698632 C15.0356839,9.698632 14.8606846,10.1287034 14.8606846,10.7597253 L14.8606846,12.1511832 L17.0188954,12.1511832 L17.0178711,14.3305647 L14.8608553,14.3305647 L14.8608553,19.9233716 L12.6097667,19.9233716 L12.6097667,14.3305647 L10.7279693,14.3305647 L10.7279693,12.1511832 L12.6097667,12.1511832 L12.6097667,10.5439213 C12.6097667,8.67868485 13.7493963,7.66283525 15.4131701,7.66283525 L17.0950415,7.66539621 L17.0950415,9.6981198 L17.0948707,9.6981198 Z" id="facebook-icon" fill="#FEFEFE" fill-rule="nonzero"></path>
+        </g>
+        <g id="facebook" transform="translate(2.000000, 2.000000)">
+            <circle id="Oval" fill="#3B5998" cx="14" cy="14" r="14"></circle>
+            <path d="M17.0948707,9.6981198 L15.940729,9.698632 C15.0356839,9.698632 14.8606846,10.1287034 14.8606846,10.7597253 L14.8606846,12.1511832 L17.0188954,12.1511832 L17.0178711,14.3305647 L14.8608553,14.3305647 L14.8608553,19.9233716 L12.6097667,19.9233716 L12.6097667,14.3305647 L10.7279693,14.3305647 L10.7279693,12.1511832 L12.6097667,12.1511832 L12.6097667,10.5439213 C12.6097667,8.67868485 13.7493963,7.66283525 15.4131701,7.66283525 L17.0950415,7.66539621 L17.0950415,9.6981198 L17.0948707,9.6981198 Z" id="facebook-icon" fill="#FEFEFE" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

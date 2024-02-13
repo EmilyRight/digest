@@ -1,0 +1,14 @@
+@import "./vars";
+@import "ui/buttons";
+
+
+//links
+.small-text{font-size: .8em}
+.text-gray{color:$color-gray;}
+.text-link{text-decoration: underline;cursor:pointer;-webkit-tap-highlight-color: transparent;
+  &:hover{text-decoration: none}
+}
+
+.link-gray{color:$color-lightgray2;border-color: $color-lightgray2;}
+.link--dashed{border-bottom:1px dashed $color-gray;text-decoration: none;}
+.link--underline{border:0;border-bottom: 1px;border-style: solid;text-decoration:none; cursor:pointer;}

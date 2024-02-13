@@ -1,0 +1,57 @@
+%ab{position:absolute;content:'';display: block;box-sizing:border-box;}
+%ellipsis{overflow:hidden;white-space: nowrap;text-overflow: ellipsis;}
+
+//@import "./base/markup-mixins";
+//@import "./mq";
+
+$base-font-size: 1.6rem;
+$base-line-height: 1.375;
+$base-font-family: 'tele2_sans', sans-serif;
+$base-min-width: 320px;
+$icoPath: '../img/icons';
+$fontPath: '../fonts';
+
+
+////Breakpoints
+$mobile: 767px;
+$tablet: 992px;
+$retina: 1.5;     // mobile retina
+$retina-hd: 2.5;
+
+
+////FONTS
+$font1:'tt-commons';
+$font2:'tt-commons';
+$font1b:'tt-commons';
+/*$font1b:'tele2_sans';
+$font2:'tele2_serif';
+$font2b:'tele2_serif';
+$font3:'tele2_short';
+$fontStencil:'stencil';*/
+
+
+////Colors
+$color-white:#ffffff;
+$color-extralight:#f9f9fa;
+$color-extralight2:#F5F5FA;
+$color-light0:#F0F1F2;
+$color-light:#E8E8ED;
+$color-lightgray:#D1D8D6;
+$color-lightgray2:#8f9399;
+$color-gray0:#7A7A7A;
+$color-gray:#626469;
+$color-gray2:#36393f;
+$color-dark:#1f2229;
+$color-black:#000000;
+
+$color-yellow:#d7ff38;
+$color-yellow2:#ffda57;
+$color-yellow3:#ffe538;
+$color-green3:#41A674;
+$color-green2: #38ffa6;
+$color-blue:#3FCBFF;
+$color-violet: #c882ff;
+$color-pink:#ff59a3;
+$color-red2:#D72F4B;
+$color-red:#FF002A;
+$color-orange:#ff641e;

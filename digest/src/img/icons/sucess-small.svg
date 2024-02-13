@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>84C8B258-8531-4574-93DF-BBD44AE21A18</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M6.50284251,0 L6.5,0 C2.91032048,0 0,2.91027805 0,6.50081228 C0,10.0913465 2.90991441,13.0016246 6.5,13.0016246 C10.0888674,13.0016246 12.9983757,10.0925649 13,6.50365514 C12.9975636,2.91474541 10.0908977,0.00568572324 6.50324858,1.44283905e-15 L6.50284251,0 Z" id="path-1"></path>
+        <path d="M5.98560504,0.180962053 L2.73459289,3.52322039 L1.05533063,1.79346321 C0.944669366,1.66143477 0.781826361,1.57833995 0.599640126,1.57833995 C0.268556005,1.57833995 0,1.85393777 0,2.19370326 C0,2.38020497 0.0809716599,2.54777952 0.208726946,2.66041917 L2.31488979,4.82134614 C2.41790373,4.93167759 2.56275304,5 2.72334683,5 L2.73549258,5 L2.74224022,5 C2.90373369,5 3.04993252,4.93167759 3.15474584,4.82134614 L6.82546109,1.04791801 C6.9334233,0.936663281 7,0.783399501 7,0.613978395 C7,0.444557289 6.9334233,0.291293509 6.82546109,0.180038778 C6.71839856,0.0687840458 6.56995052,0 6.40575798,0 C6.24156545,0 6.09311741,0.0687840458 5.98605488,0.180038778 L5.98560504,0.180962053 Z" id="path-3"></path>
+    </defs>
+    <g id="Iconography" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DS-Style/Icons" transform="translate(-686.000000, -1341.000000)">
+            <g id="symbols" transform="translate(438.000000, 112.000000)">
+                <g id="icons" transform="translate(0.000000, 371.000000)">
+                    <g id="indicators" transform="translate(0.000000, 786.000000)">
+                        <g id="success-small" transform="translate(222.000000, 46.000000)">
+                            <g id="Icons/Indicators/Success/Small" transform="translate(26.000000, 26.000000)">
+                                <g id="bg">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="Mask" opacity="0.195935236" fill-rule="nonzero"></g>
+                                    <g id="Color/Valid-semitransparent" mask="url(#mask-2)" fill="#41A674" fill-opacity="0.3">
+                                        <polygon id="bg" points="0 0 13 0 13 13 0 13"></polygon>
+                                    </g>
+                                </g>
+                                <g id="sign" transform="translate(3.000000, 4.000000)">
+                                    <mask id="mask-4" fill="white">
+                                        <use xlink:href="#path-3"></use>
+                                    </mask>
+                                    <use id="Mask" fill="#D8D8D8" xlink:href="#path-3"></use>
+                                    <g id="Color/Valid" mask="url(#mask-4)" fill="#41A674">
+                                        <g transform="translate(-1.000000, -2.000000)" id="bg">
+                                            <polygon points="0 0 9 0 9 9 0 9"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

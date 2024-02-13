@@ -1,0 +1,24 @@
+[data-tooltip]{cursor:default}
+
+.ico-tip{display: inline-block;vertical-align: super;
+  width: 2.4rem;position: relative;cursor: pointer;-webkit-tap-highlight-color: transparent;
+  img,svg{display: block;transform: scale(1,-1);}
+
+  &:hover,&:active,&:focus{
+    .tooltip-container{display: block;}
+  }
+}
+
+.tooltip{position: relative;
+  &-container{display: none}
+  &__body{position: absolute; z-index: 5000;right: 200%;bottom:-100%;
+    display: block;width: 28rem;margin-right: -1.3rem;cursor: default;
+  }
+  &__text{position: relative;border:1px solid $color-light;background: #fff;display: block;
+    box-shadow: 0 6px 9px rgba(0,0,0, .1);padding: 1rem;color:#888 !important;font-size: 1.6rem;
+    font-style: normal;user-select: none;
+    &:after{content:'';position: absolute;
+      top: calc(50% - 1rem);right: -2rem;display: block;
+      border: 1rem solid transparent;border-left: 1rem solid #fff;}
+  }
+}
