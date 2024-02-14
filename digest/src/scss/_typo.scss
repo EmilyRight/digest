@@ -65,6 +65,11 @@ p {
   }
 }
 
+.link {
+  color: #fff;
+  text-decoration: underline;
+  background-color: transparent;
+}
 .br-desktop {
   @media (max-width: 600px) {
     display: none;
