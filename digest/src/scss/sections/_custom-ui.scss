@@ -7,7 +7,7 @@ button {
 .controls {
   position: fixed;
   bottom: 0;
-  left: 0;
+  right: 0;
   width: 50rem;
   padding: 7.2rem;
   &:before {
@@ -43,7 +43,6 @@ button {
     }
     .text-link {
       color: #fff;
-      background-color: #1f2229;
       font-size: 2.6rem;
       line-height: 3.25rem;
       font-weight: 500;

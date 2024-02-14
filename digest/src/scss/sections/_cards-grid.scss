@@ -14,7 +14,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 22% 22% 22% 22%;
     grid-template-rows: 38.4rem 20rem 20rem;
-    grid-template-rows: 35vh 18vh 18vh;
+    grid-template-rows: 34vh 17vh 17vh;
   }
   .card {
     &_1 {
@@ -114,7 +114,7 @@
     border-radius: 3.2rem;
     overflow: hidden;
     transform: translateZ(0);
-    padding: 2.4rem;
+    padding: 1.5vh 2.4rem;
     flex: 23% 0 1;
     position: relative;
     cursor: pointer;
@@ -155,6 +155,7 @@
       overflow: hidden;
       display: inline-block;
       font-size: 1.2rem;
+      line-height: 1;
       font-weight: 700;
       position: absolute;
       top: 2vh;
@@ -182,9 +183,9 @@
     &__title {
       font-family: $font1;
       font-weight: 700;
-      font-size: clamp(2.8rem, 2.5782rem + 0.455vw, 4rem);
-      line-height: 4rem;
-      margin-bottom: 1rem;
+      font-size: clamp(2.8rem, 3.66vh, 4rem);
+      line-height: 1;
+      margin-bottom: 1vh;
     }
     &__txt {
       max-width: 80%;
@@ -192,7 +193,7 @@
         margin: 0;
         display: block;
         position: relative;
-        font-size: clamp(1.6rem, 1.5261rem + 0.1517vw, 2rem);
+        font-size: clamp(1.6rem, 1.88vh, 2rem);
         line-height: 2rem;
       }
     }
@@ -206,8 +207,8 @@
       align-items: center;
       justify-content: center;
       position: absolute;
-      right: 2rem;
-      top: 2rem;
+      right: 2.4rem;
+      top: 2vh;
       transition: 0.3s ease-in-out;
 
       &_right-bottom {
@@ -306,6 +307,7 @@
       .card__bg {
         img {
           width: 100%;
+          height: 100%;
           object-position: bottom;
           object-fit: cover;
         }

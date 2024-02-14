@@ -29,13 +29,6 @@
   }
 }
 
-body {
-  overflow: hidden;
-  @media (max-width: 600px) {
-    overflow: auto;
-  }
-}
-
 @import "sections/custom-ui";
 @import "sections/header";
 // @import "sections/cards";

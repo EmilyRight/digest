@@ -92,7 +92,7 @@
     &__title {
       font-family: $font1;
       font-weight: 700;
-      font-size: clamp(2.41vw, 4rem, 6vw);
+      font-size: clamp(2.8rem, 2.5782rem + 0.455vw, 4rem);
       line-height: 4rem;
       margin-bottom: 1rem;
     }
@@ -139,6 +139,7 @@
         img {
           min-width: 100%;
           height: auto; //min-height: 100%;
+
         }
         .gradient-bg {
           width: 100%;
@@ -161,7 +162,7 @@
       flex: calc(50% - 1vh) 1 1;
     }
 
-    &--small{
+    &--small {
       flex: 15% 1 1;
     }
 
