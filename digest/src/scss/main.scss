@@ -38,8 +38,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-height: 100vh;
+    height: 100vh;
     @media (max-width: 780px) {
+      height: auto;
     }
   }
   .wow {

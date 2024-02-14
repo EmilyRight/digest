@@ -57,9 +57,51 @@
     .cards-list {
       display: flex;
       flex-flow: column nowrap;
+      gap: 1.6rem;
       .card {
         width: 100%;
         height: auto; //flex:100% 1 1;
+        &_1 {
+          order: 1;
+          height: 38rem;
+        }
+        &_2 {
+          order: 5;
+          height: 22rem;
+          .card__bg {
+            z-index: -1;
+            width: 100%;
+            min-height: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 2rem;
+          }
+        }
+
+        &_3 {
+          order: 2;
+          height: 26.8rem;
+        }
+
+        &_4 {
+          order: 6;
+          height: 22rem;
+        }
+
+        &_5 {
+          order: 4;
+          height: 26.8rem;
+        }
+
+        &_6 {
+          order: 3;
+          height: 26.8rem;
+        }
+
+        &_7 {
+          order: 7;
+          height: 22rem;
+        }
       }
     }
   }
@@ -117,6 +159,10 @@
       position: absolute;
       top: 2vh;
       left: 2.4rem;
+      @media (max-width: 780px) {
+        left: 1.6rem;
+        top: 1.6rem;
+      }
     }
     &__badges {
       display: flex;
@@ -126,6 +172,10 @@
       gap: 1rem;
       .card__badge {
         position: static;
+      }
+      @media (max-width: 780px) {
+        left: 1.6rem;
+        top: 1.6rem;
       }
     }
 
@@ -139,7 +189,7 @@
     &__txt {
       max-width: 80%;
       p {
-        margin-bottom: 0.3rem;
+        margin: 0;
         display: block;
         position: relative;
         font-size: clamp(1.6rem, 1.5261rem + 0.1517vw, 2rem);
@@ -164,6 +214,16 @@
         top: auto;
         bottom: 2rem;
       }
+
+      @media (max-width: 780px) {
+        right: 1.6rem;
+        top: 1.6rem;
+
+        &_right-bottom {
+          top: auto;
+          bottom: 2rem;
+        }
+      }
     }
 
     &--big {
@@ -172,7 +232,12 @@
         height: 5.8rem;
         margin-bottom: 1.6rem;
         margin-top: 2rem;
-        display: block;
+        &_mobile {
+          display: none;
+        }
+        &_desktop {
+          display: block;
+        }
       }
       .card__bg {
         img {
@@ -213,17 +278,11 @@
 
     @media (max-width: 780px) {
       border-radius: 2rem;
-      order: 3;
       flex: none;
-      background: #545a69;
       padding: 1.6rem;
-      justify-content: flex-start;
       min-height: 19rem;
-      &.card__sm {
-        background: #545a69;
-        .card__bg {
-          display: none;
-        }
+      &__badge {
+        top: 1.6rem;
       }
       .card__bg_desktop {
         display: none;
@@ -232,7 +291,17 @@
       .card__bg_mobile {
         display: block;
       }
+      .logo {
+        height: 3.8rem;
+        margin: 0;
+        &_mobile {
+          display: block;
+        }
 
+        &_desktop {
+          display: none;
+        }
+      }
       .card__bg {
         img {
           width: 100%;
@@ -245,30 +314,16 @@
         }
       }
 
-      &__badge {
-        position: relative;
-        left: 2.4rem;
-        top: auto;
-        margin-bottom: 1.6rem;
-      }
       &__title {
         font-size: 2.8rem;
+        line-height: 3.36rem;
       }
       &__txt {
+        max-width: 100%;
         p {
-          font-size: 2rem;
-          line-height: 2.8rem;
+          font-size: 1.6rem;
+          line-height: 2.24rem;
         }
-      }
-      &.card--big {
-        height: 38rem;
-        order: 1;
-        background: #000;
-      }
-      &.card--medium {
-        height: 27rem;
-        background: #000;
-        order: 2;
       }
     }
   }
