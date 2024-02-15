@@ -41,8 +41,11 @@
 
   &__title {
     font: 700 12.8rem/12.8rem $font1;
+    font-size: clamp(7rem, 12vh, 12.8rem);
+    line-height: 1;
+    font-family: $font1;
     color: #fff;
-    margin-bottom: 2.4rem;
+    margin-bottom: 4vh;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
     text-transform: none;

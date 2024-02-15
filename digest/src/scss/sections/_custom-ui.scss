@@ -15,10 +15,11 @@ button {
     @extend %ab;
     z-index: -1;
     pointer-events: none;
-    background: linear-gradient(#fff0 0%, #000000 99%);
+    background: linear-gradient(#fff0 0%, #000000 69%);
+    // background-color: #fff;
     width: 200%;
-    height: 120%;
-    bottom: -120%;
+    height: 180%;
+    bottom: -200%;
     left: -8%;
     transform: rotate(10deg);
   }
