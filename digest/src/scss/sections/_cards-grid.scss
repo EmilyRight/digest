@@ -296,6 +296,8 @@
           height: 100%;
           object-position: bottom;
           object-fit: cover;
+          top: auto;
+          bottom: 0;
         }
         .svg-pic {
           top: auto;
