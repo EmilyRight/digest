@@ -71,6 +71,7 @@
     ul {
       padding: 0;
       margin: 0;
+      margin-bottom: 10rem;
     }
     li {
       margin-bottom: 2.8rem;
@@ -203,13 +204,13 @@
       max-width: fit-content;
       font-size: 1.2rem;
       padding: 0.6rem 1.2rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 1.8rem;
     }
     &__title {
       padding: 0;
       font-size: 3.2rem;
       line-height: 3.84rem;
-      margin-bottom: 0.8rem;
+      margin-bottom: 1.8rem;
     }
     &__badge {
       + .article__badge {
