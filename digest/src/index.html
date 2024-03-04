@@ -51,7 +51,9 @@
     <meta
       name="twitter:image:src"
       content="https://b2c-digest.tele2.ru/src/img/preview-og.jpg" />
-    <link rel="image_src" href="https://b2c-digest.tele2.ru/src/img/preview-og.jpg" />
+    <link
+      rel="image_src"
+      href="https://b2c-digest.tele2.ru/src/img/preview-og.jpg" />
     <meta
       name="twitter:image"
       content="https://b2c-digest.tele2.ru/src/img/preview-og.jpg" />
@@ -60,9 +62,20 @@
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent" />
     <meta name="theme-color" content="#1f2229" />
+    <!-- Google Tag Manager -->
     <script>
-      dataLayer = [{ pageType: "Main", userId: "24487464" }];
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NR3BH2M7");
     </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
     <div class="svgs">
@@ -88,9 +101,7 @@
     <div class="main-page page">
       <div class="main-page__container container">
         <header class="main-page__header header">
-          <h1 class="page__title">
-            Дайджест B2С-кластера Ростелекома
-          </h1>
+          <h1 class="page__title">Дайджест B2С-кластера Ростелекома</h1>
           <div class="cards-info">
             <div class="news-date">Январь 2024</div>
             <div class="other-news other-news_desktop">
@@ -585,8 +596,8 @@
               <span class="redtext">до&nbsp;5&nbsp;мая</span>.
             </li>
             <li>
-              За&nbsp;первый месяц 2024 года к&nbsp;домашнему интернету было
-              подключено <span class="redtext">18&nbsp;482&nbsp;абонента</span>.
+              За&nbsp;первый месяц 2024 года план по&nbsp;подключениям домашнего
+              интернета перевыполнен <span class="redtext">на&nbsp;30%</span>.
             </li>
           </ul>
         </div>
@@ -661,14 +672,5 @@
     </div>
 
     <script type="module" src="./js/main.js" defer></script>
-
-    <!-- GTM -->
-    <!--<script>
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-XXXXX');</script>-->
-    <!-- End GTM -->
   </body>
 </html>
