@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="64px" viewBox="0 0 32 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Sprites/yandex-nav</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.00041159537%" y1="99.9980853%" x2="100.004639%" y2="-0.00614220433%" id="linearGradient-1">
+            <stop stop-color="#FFCC00" offset="0%"></stop>
+            <stop stop-color="#FFE992" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Icons/Sprites/yandex-nav" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nav-unactive" transform="translate(2.000000, 34.000000)">
+            <circle id="Oval" fill="#C1C9DA" cx="14" cy="14" r="14"></circle>
+            <g id="icon" transform="translate(5.250000, 7.583333)" fill="#FFFFFF" fill-rule="nonzero">
+                <polygon id="Fill-1" points="15.1434669 0.0377662164 0.0376189211 6.17665511 6.64785284 8.53718142 9.00837915 15.1436142"></polygon>
+            </g>
+        </g>
+        <g id="nav" transform="translate(2.000000, 2.000000)">
+            <circle id="Oval" fill="#000000" cx="14" cy="14" r="14"></circle>
+            <g id="icon" transform="translate(5.250000, 7.583333)" fill-rule="nonzero">
+                <polygon id="Fill-1" fill="url(#linearGradient-1)" points="15.1434669 0.0377662164 0.0376189211 6.17665511 6.64785284 8.53718142 9.00837915 15.1436142"></polygon>
+                <polygon id="Fill-3" fill="#FFCC00" points="15.1434669 0.0377662164 6.41218032 8.77285394 9.00837915 15.1436142"></polygon>
+                <polygon id="Fill-4" fill="#ECA704" points="6.17650781 9.00852645 9.00837915 15.1436142 8.06188793 7.11934516 0.0376189211 6.17665511"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

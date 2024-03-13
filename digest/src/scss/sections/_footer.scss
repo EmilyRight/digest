@@ -1,0 +1,42 @@
+.footer {
+  display: none;
+  @media (max-width: 780px) {
+    display: block;
+    padding: 1.6rem 0 2.4rem;
+    .other-news {
+      &_mobile {
+        display: flex;
+        justify-content: center;
+      }
+
+      &__link {
+        color: #8c92a1;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__text {
+        margin-right: 1.5rem;
+      }
+
+      &__icon {
+      }
+    }
+    .js-show-article {
+    }
+    .arrow-icon {
+      text-align: center;
+      background: #ffffff39;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 3.1rem;
+      height: 3.1rem;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

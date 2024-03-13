@@ -1,0 +1,26 @@
+//////VARS /////
+$color-dark:#1f2229;
+
+$color-light:#f0f1f2;
+$color-light2:#f5f5fa;
+$color-lightgray:#e8e8ed;
+$color-gray:#8f9399;
+$color-yellow:#D7FF38;
+$color-pink:#ff80b7;
+$color-blue:#3fcbff;
+
+///TEMPLATES
+%ab{position:absolute;content:'';display: block;box-sizing: border-box;}
+%circle{}
+
+
+/////// MQ /////
+@media (min-width:1440px){html{font-size: 12px}}
+@media (min-width:1700px){html{font-size: 14px}}
+@media (min-width:2000px){html{font-size: 20px}}
+@media (min-width:3000px){html{font-size: 32px}}
+//
+@media (max-width:1048px){html{font-size: 8px}}
+@media (max-width:769px){html{font-size: 7px}}
+@media (max-width:600px){html{font-size: 12px}}
+@media (max-width:440px){html{font-size: 10px}}
