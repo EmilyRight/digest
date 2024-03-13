@@ -1,34 +1,37 @@
-.container {max-width: 90%;width: 100%;
-  margin-left: auto;margin-right: auto;
-  padding-left: 18px;padding-right: 18px;
-  //@media (max-width:1440px){max-width: 116rem;}
-  @media (max-width:1000px){max-width: 92%;}
-  @media (max-width: 600px) {max-width: 100%;}
-}
+.container {
+  max-width: 90%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.6rem 18px;
 
-.section--about{background: #fff;overflow: hidden;
-  @media (max-width: 600px){
+  flex: 100% 1 1;
+  display: flex;
+  flex-direction: column;
 
+  @media (max-width: 1000px) {
+    max-width: 93%;
+  }
+  @media (max-width: 600px) {
+    max-width: 100%;
+  }
+  @media (min-width: 1001px) {
+    padding: 5vh 0;
+    width: 93%;
+    max-width: 160rem;
   }
 }
 
-body{overflow: hidden;
-  @media (max-width: 600px){
-    overflow: auto;
+.section--about {
+  background: #fff;
+  overflow: hidden;
+  @media (max-width: 600px) {
   }
 }
-.page{padding:2vh  0 5vh;
-  &__title{h1{font-size: 6rem;line-height:1.2;display:block;margin: 0;}}
-  @media (max-width: 600px){
-    padding: 2.4rem 0;
-    .page__title{h1{font-size: 3.2rem;line-height: 1.06}}
-  }
-}
-
 
 @import "sections/custom-ui";
-@import "sections/cards";
+@import "sections/header";
+// @import "sections/cards";
+@import "sections/cards-grid";
 @import "sections/articles";
-
-
-
+@import "sections/footer";

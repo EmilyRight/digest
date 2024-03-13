@@ -22,7 +22,6 @@ $doc.addEventListener('DOMContentLoaded', () => {
 
       // prepare PAGE
       $body.classList.add('noscroll');
-
       // show article
       const $articles = $doc.querySelectorAll('.article');
       $articles.forEach((article) => {

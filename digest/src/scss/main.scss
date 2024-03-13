@@ -1,6 +1,19 @@
-html {min-height: 100%;box-sizing: border-box;font-size: 10px;background: #1f2229;scroll-behavior: smooth;}
-body {overflow-x: hidden;overflow-y: scroll;min-width: 320px;margin: 0;background: inherit;
-  -webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: none;
+html {
+  min-height: 100%;
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #1f2229;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  min-width: 320px;
+  margin: 0;
+  background: inherit;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: none;
 }
 
 @import "vars";
@@ -8,19 +21,42 @@ body {overflow-x: hidden;overflow-y: scroll;min-width: 320px;margin: 0;backgroun
 @import "typo";
 
 //PAGE STYLES
-body {color: $color-dark;
-  font: 1.6rem/1.375 $font1, sans-serif;-webkit-text-size-adjust: none;
-  &.noscroll {overflow: hidden !important;}
-
-  .page {background:#373C48;color:#fff;min-height: 100vh;
-    box-sizing: border-box;overflow: hidden;
-    display: flex;flex-direction: column;justify-content: space-between;
+body {
+  color: $color-dark;
+  font: 1.6rem/1.375 $font1, sans-serif;
+  -webkit-text-size-adjust: none;
+  &.noscroll {
+    overflow: hidden !important;
   }
-  .wow {opacity: 0;
-    &.animated {opacity: 1;}
+
+  .page {
+    background: #000;
+    color: #fff;
+    // min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    @media (max-width: 780px) {
+      height: auto;
+    }
+  }
+  .wow {
+    opacity: 0;
+    &.animated {
+      opacity: 1;
+    }
     //@media (max-width: 600px) {opacity: 1;}
   }
-  .svgs {height: 0;visibility: hidden;position: absolute;z-index: -6;pointer-events: none;}
+  .svgs {
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: -6;
+    pointer-events: none;
+  }
 }
 
 @import "ui";
@@ -28,15 +64,55 @@ body {color: $color-dark;
 @import "animation";
 
 /////// MQ /////
-@media (min-width: 1440px) { html {font-size: 9px;} }
-@media (min-width: 1700px) { html {font-size: 10px;} }
-@media (min-width: 2000px) { html {font-size: 11px;} }
-@media (min-width: 2200px) { html {font-size: 12px;} }
-@media (min-width: 3000px) { html {font-size: 18px;} }
+@media (min-width: 1440px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (min-width: 1700px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 2000px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media (min-width: 2200px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 3000px) {
+  html {
+    font-size: 18px;
+  }
+}
 //
-@media (max-width: 1280px){ html {font-size: 8px;} }
-@media (max-width: 1000px){ html {font-size: 9px;}}
-@media (max-width: 769px) { html {font-size: 7px;}}
-@media (max-width: 600px) { html {font-size: 11px;}}
-@media (max-width: 440px) { html {font-size: 10px;}}
+@media (max-width: 1280px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 769px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media (max-width: 440px) {
+  html {
+    font-size: 10px;
+  }
+}
 //@include mq($until: tablet){}
