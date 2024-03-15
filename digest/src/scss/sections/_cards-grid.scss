@@ -108,7 +108,7 @@
     border-radius: 2.2rem;
     overflow: hidden;
     transform: translateZ(0);
-    padding: 1.9vh 1.9vh 1.2vh;
+    padding: 1.9vh 1.9vh 1.5vh;
     flex: 23% 0 1;
     position: relative;
     cursor: pointer;
@@ -180,7 +180,6 @@
       line-height: 3.5vh;
       margin-bottom: 1vh;
       font-weight: 500;
-      max-width: 90%;
       @media (max-width: 780px) {
         font-size: 2.8rem !important;
         line-height: 3.36rem !important;
@@ -313,7 +312,6 @@
     }
     .card__txt {
       flex: 100% 1 1;
-
     }
 
     .card__image {
@@ -335,7 +333,7 @@
 
     .card__txt {
       max-width: 60%;
-      padding-bottom: 2rem;
+      padding-bottom: 1.5vh;
     }
     .logo {
       height: 4.9rem;
@@ -356,7 +354,7 @@
     }
     @media (max-width: 780px) {
       .card__txt {
-        padding-bottom: 2rem;
+        padding-bottom: 1.6rem;
       }
       .logo {
         height: 2.5rem;
