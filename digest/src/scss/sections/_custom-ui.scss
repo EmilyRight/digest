@@ -42,9 +42,9 @@ button {
   }
   .text-link {
     color: #fff;
-    font-size: 2.6rem;
+    font-size: clamp(1.6rem, 2vw, 2.2rem);
     line-height: 3.25rem;
-    font-weight: 500;
+    font-weight: 400;
     margin-left: 2rem;
   }
 
