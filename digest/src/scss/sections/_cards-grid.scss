@@ -114,7 +114,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    //transition: .2s liear;
     &__bg_mobile {
       display: none;
     }
@@ -333,7 +332,9 @@
     .card__txt {
       max-width: 60%;
     }
-
+    .logo {
+      height: 4.9rem;
+    }
     .card__image {
       position: absolute;
       right: 0;
