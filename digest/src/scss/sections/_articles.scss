@@ -142,23 +142,22 @@
     border-radius: 0 5.6rem 5.6rem 0;
     overflow: hidden;
     max-height: calc(100% - 14.4rem);
-    .article-bg {
+    .article-bg_mob,
+    .article-bg_desk {
       height: 100%;
-      display: block;
       margin: 0;
+    }
+    .article-bg_mob {
+      display: none;
+    }
+    .article-bg_desk {
+      display: block;
     }
     .article-img {
       height: calc(100vh - 12.4rem);
 
       // margin-top: 6rem;
       // margin-right: 6rem;
-    }
-    &::before {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(to right, #000, #ffffff00);
     }
   }
 
@@ -209,6 +208,12 @@
       .article-bg {
         margin: 0;
         height: auto;
+      }
+      .article-bg_mob {
+        display: block;
+      }
+      .article-bg_desk {
+        display: none;
       }
     }
 

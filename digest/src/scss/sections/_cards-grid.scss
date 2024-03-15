@@ -8,13 +8,12 @@
   &-list {
     display: grid;
     flex: 100% 1 1;
-    gap: 2vh;
+    gap: 2vh 1.8vh;
     height: 100%;
     max-height: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 22% 22% 22% 22%;
-    grid-template-rows: 38.4rem 20rem 20rem;
-    grid-template-rows: 34vh 17vh 17vh;
+    grid-template-rows: 34vh 18vh 18vh;
   }
   .card {
     &_1 {
@@ -66,41 +65,33 @@
           height: 38rem;
         }
         &_2 {
-          order: 5;
-          height: 22rem;
-          .card__bg {
-            z-index: -1;
-            width: 100%;
-            min-height: 100%;
-            position: absolute;
-            bottom: 0;
-            left: 2rem;
-          }
+          order: 4;
+          height: 19rem;
         }
 
         &_3 {
           order: 2;
-          height: 26.8rem;
+          height: 26.5rem;
         }
 
         &_4 {
-          order: 6;
-          height: 22rem;
+          order: 7;
+          height: 19rem;
         }
 
         &_5 {
-          order: 4;
-          height: 26.8rem;
+          order: 5;
+          height: 19rem;
         }
 
         &_6 {
-          order: 3;
+          order: 6;
           height: 26.8rem;
         }
 
         &_7 {
-          order: 7;
-          height: 22rem;
+          order: 3;
+          height: 26.5rem;
         }
       }
     }
@@ -114,14 +105,14 @@
     border-radius: 3.2rem;
     overflow: hidden;
     transform: translateZ(0);
-    padding: 2.062vh;
+    padding: 1.2vh 2.4rem 0.8vh;
     flex: 23% 0 1;
     position: relative;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-start;
     //transition: .2s liear;
     &__bg_mobile {
@@ -134,9 +125,10 @@
       z-index: -1;
       width: 100%;
       min-height: 100%;
+      pointer-events: none;
       img {
         width: 100%;
-        height: 100%;
+        min-height: 100%;
         display: block;
         margin: 0;
         position: absolute;
@@ -147,7 +139,15 @@
         top: -2px;
       }
     }
-
+    &__content {
+      justify-self: flex-end;
+    }
+    &__header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     &__badge {
       background: rgba(244, 244, 244, 0.3);
       padding: 0.6rem 1.2rem;
@@ -155,47 +155,46 @@
       overflow: hidden;
       display: inline-block;
       font-size: 1.2rem;
-      line-height: 1;
+      line-height: normal;
       font-weight: 700;
-      position: absolute;
-      top: 2vh;
-      left: 2.4rem;
-      @media (max-width: 780px) {
-        left: 1.6rem;
-        top: 1.6rem;
-      }
+      // max-height: 2.5rem;
     }
     &__badges {
       display: flex;
-      position: absolute;
-      top: 2vh;
-      left: 2.4rem;
       gap: 1rem;
-      .card__badge {
-        position: static;
-      }
-      @media (max-width: 780px) {
-        left: 1.6rem;
-        top: 1.6rem;
+    }
+    &--medium {
+      .card__title {
+        font-size: clamp(2.8rem, 4.5vh, 4.8rem);
+        font-weight: 500;
+        line-height: 4.9vh;
+        max-width: 90%;
       }
     }
-
     &__title {
       font-family: $font1;
       font-weight: 700;
-      font-size: clamp(2.8rem, 2.8vh, 4rem);
-      line-height: 1;
+      font-size: clamp(2.8rem, 4vh, 4.2rem);
+      line-height: 3.5vh;
       margin-bottom: 1vh;
-    }
-    &__txt {
+      font-weight: 500;
       max-width: 90%;
+      @media (max-width: 780px) {
+        font-size: 2.8rem !important;
+        line-height: 3.36rem !important;
+      }
+    }
+
+    &__txt {
+      position: relative;
+      z-index: 1;
       p {
         margin: 0;
         display: block;
         position: relative;
         font-size: clamp(1.6rem, 1.88vh, 2rem);
         line-height: 2.8vh;
-        font-weight: 500;
+        font-weight: 400;
       }
     }
     &__link {
@@ -207,9 +206,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      position: absolute;
-      right: 2.4rem;
-      top: 2vh;
       transition: 0.3s ease-in-out;
 
       &_right-bottom {
@@ -234,7 +230,6 @@
       .logo {
         height: 5.8rem;
         margin-bottom: 1.6rem;
-        margin-top: 2rem;
         &_mobile {
           display: none;
         }
@@ -242,20 +237,6 @@
           display: block;
         }
       }
-      .card__bg {
-        img {
-          min-width: 100%;
-          height: auto;
-          top: -10vh;
-        }
-      }
-    }
-    &--medium {
-      flex: calc(50% - 1vh) 1 1;
-    }
-
-    &--small {
-      flex: 15% 1 1;
     }
 
     &:hover {
@@ -281,7 +262,7 @@
         display: block;
       }
       .logo {
-        height: 3.8rem;
+        height: 3.5rem;
         margin: 0;
         &_mobile {
           display: block;
@@ -302,7 +283,7 @@
         }
         .svg-pic {
           top: auto;
-          bottom: 2rem;
+          bottom: 0rem;
         }
       }
 
@@ -316,6 +297,60 @@
           font-size: 1.6rem;
           line-height: 2.24rem;
         }
+      }
+    }
+  }
+  .card_1 {
+    justify-content: flex-start;
+    padding-bottom: 0;
+    .card__content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .card__txt {
+      flex: 100% 1 1;
+    }
+
+    .card__image {
+      width: 100%;
+      max-width: 51rem;
+      align-self: flex-end;
+      img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .card_3 {
+    justify-content: space-between;
+    padding-bottom: 0;
+
+    .card__txt {
+      max-width: 60%;
+    }
+
+    .card__image {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      img {
+        display: block;
+        max-height: 100%;
+        width: auto;
+      }
+    }
+    @media (max-width: 780px) {
+      .card__txt {
+        padding-bottom: 2rem;
+      }
+      .logo {
+        height: 2.5rem;
       }
     }
   }

@@ -16,9 +16,9 @@
     max-width: 100%;
   }
   @media (min-width: 1001px) {
-    padding: 5vh 0;
+    padding: 4.3vh 0;
     width: 93%;
-    max-width: 160rem;
+    max-width: 176rem;
   }
 }
 
@@ -33,5 +33,6 @@
 @import "sections/header";
 // @import "sections/cards";
 @import "sections/cards-grid";
-@import "sections/articles";
+// @import "sections/articles";
+@import "sections/articles1";
 @import "sections/footer";
