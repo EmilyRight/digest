@@ -102,10 +102,10 @@
 
   .card {
     background: #1f2229;
-    border-radius: 3.2rem;
+    border-radius: 2.2rem;
     overflow: hidden;
     transform: translateZ(0);
-    padding: 1.2vh 2.4rem 0.8vh;
+    padding: 1.2vh 2rem 0.8vh;
     flex: 23% 0 1;
     position: relative;
     cursor: pointer;
@@ -156,7 +156,7 @@
       display: inline-block;
       font-size: 1.2rem;
       line-height: normal;
-      font-weight: 700;
+      font-weight: 500;
       // max-height: 2.5rem;
     }
     &__badges {
@@ -316,6 +316,7 @@
       width: 100%;
       max-width: 51rem;
       align-self: flex-end;
+      margin: 0 auto;
       img {
         display: block;
         max-width: 100%;

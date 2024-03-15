@@ -43,7 +43,7 @@ $doc.addEventListener('DOMContentLoaded', () => {
   function nextArticle(dir) {
     const $articles = $doc.querySelectorAll('.article');
     let current = 0;
-
+    console.log(current);
     $articles.forEach((article) => {
       const num = article.getAttribute('data-article');
       const isActive = article.classList.contains('_viewed');
