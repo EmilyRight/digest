@@ -69,6 +69,9 @@ p {
   color: #fff;
   text-decoration: underline;
   background-color: transparent;
+  &:hover {
+    text-decoration: none;
+  }
 }
 .br-desktop {
   @media (max-width: 600px) {
