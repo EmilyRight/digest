@@ -108,7 +108,7 @@
     border-radius: 2.2rem;
     overflow: hidden;
     transform: translateZ(0);
-    padding: 1.5vh 1.5vh 0.8vh;
+    padding: 1.9vh 1.9vh 1.2vh;
     flex: 23% 0 1;
     position: relative;
     cursor: pointer;
@@ -313,6 +313,7 @@
     }
     .card__txt {
       flex: 100% 1 1;
+
     }
 
     .card__image {
@@ -334,6 +335,7 @@
 
     .card__txt {
       max-width: 60%;
+      padding-bottom: 2rem;
     }
     .logo {
       height: 4.9rem;
