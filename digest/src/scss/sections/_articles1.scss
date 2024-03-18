@@ -36,6 +36,7 @@
     max-width: fit-content;
     display: flex;
     gap: 0.8rem;
+    align-self: flex-start;
   }
   &__badge {
     background: rgba(255, 255, 255, 0.3);
