@@ -72,10 +72,16 @@ button {
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 600px) {
   .controls {
     padding: 1.6rem;
-    width: 100vw;
+    width: 90vw;
+    max-width: 35rem;
+    &._viewed {
+      left: 50%;
+      bottom: 1.8rem;
+      transform: translateX(-50%);
+    }
     .buttons {
       justify-content: space-between;
     }
@@ -96,6 +102,7 @@ button {
       font-weight: 700 !important;
       border-radius: 6rem;
       padding: 1.3rem 5rem;
+      max-width: 19.5rem;
     }
   }
 }
