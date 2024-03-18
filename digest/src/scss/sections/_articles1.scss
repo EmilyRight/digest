@@ -20,7 +20,6 @@
   transform: translateX(100vw) translate3d(0, 0, 0);
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   &._viewed {
     transform: translateX(-100vw);
@@ -36,7 +35,6 @@
     max-width: fit-content;
     display: flex;
     gap: 0.8rem;
-    align-self: flex-start;
   }
   &__badge {
     background: rgba(255, 255, 255, 0.3);
@@ -57,7 +55,6 @@
     z-index: 2;
     order: 1;
     max-height: 2.5rem;
-    align-self: flex-start;
     @media (min-width: $mobile) {
       padding: 0.8rem 1.6rem;
       margin-bottom: 2.3vw;
@@ -70,7 +67,6 @@
     font-weight: 600;
     font-family: $font1;
     font-size: 3.2rem;
-    align-self: flex-start;
     margin-bottom: 1.2rem;
     line-height: 3.3rem;
     order: 2;
@@ -95,6 +91,7 @@
     order: 3;
     border-radius: 2rem;
     max-height: 18.8rem;
+    align-self: center;
     margin-bottom: 0.8rem;
     img {
       // width: 100%;
