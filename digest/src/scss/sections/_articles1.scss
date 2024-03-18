@@ -90,12 +90,14 @@
   &__pic {
     order: 3;
     border-radius: 2rem;
-    max-height: 18.8rem;
+    height: 60.8vw;
     align-self: center;
     margin-bottom: 0.8rem;
+    display: flex;
+    width: 100%;
     img {
-      // width: 100%;
-      max-height: 100%;
+      width: 100%;
+      max-width: 100%;
       display: block;
       margin: 0 auto;
       border-radius: 1.2rem;
@@ -107,13 +109,13 @@
       right: 7.2rem;
       top: 7.2rem;
       width: 42%;
+      height: auto;
       max-height: calc(100% - 14.4rem);
-      // max-width: 70rem;
+      max-width: 70rem;
       overflow: hidden;
 
       img {
         width: 100%;
-        min-height: auto;
       }
     }
     @media (min-width: 1921px) {
