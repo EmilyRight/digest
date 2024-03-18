@@ -77,10 +77,14 @@ button {
     padding: 1.6rem;
     width: 90vw;
     max-width: 35rem;
+    opacity: 1;
+    opacity: 1;
+    bottom: 1.8rem;
+    left: 50%;
+    transform: translate(-50%, 25rem);
     &._viewed {
-      left: 50%;
-      bottom: 1.8rem;
-      transform: translateX(-50%);
+      opacity: 1;
+      transform: translate(-50%, 0);
     }
     .buttons {
       justify-content: space-between;
