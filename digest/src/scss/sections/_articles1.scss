@@ -90,7 +90,6 @@
       color: #fff; list-style: none;}
 
     @media (min-width: $mobile){max-width: 51%;}
-
  }
 
   &__pic {
@@ -107,9 +106,11 @@
       margin: 0 auto;
       border-radius: 1.2rem;
     }
+
     @media (max-width: $mobile){
       picture{width:100%}
       width: 100%;}
+    
     @media (min-width: $mobile) {
       position: absolute;
       border-radius: 5.6rem;
@@ -142,7 +143,6 @@
       p:last-of-type{margin-bottom: 10rem;}
     }
   }
-
 
   .article-list {
     padding: 0;
@@ -234,6 +234,7 @@
     }
   }
 
+
   @media (min-width: $mobile) {
     padding: 7.2rem 7.2rem 7.7rem;
     &_no-image {
@@ -243,4 +244,5 @@
       }
     }
   }
+
 }
