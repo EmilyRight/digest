@@ -6,22 +6,19 @@ button {
 //article view controls
 .controls {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 7.2rem;
-
+  bottom: 7.2rem;
+  left: 7.2rem;
+  padding: 2.2rem 3.2rem;
+  background-color: #4348534e;
+  border-radius: 2.4rem;
+  backdrop-filter: blur(10px);
   &:before {
     @extend %ab;
     z-index: -1;
     pointer-events: none;
-    background: linear-gradient(#fff0 0%, #000000 69%);
-    // background-color: #fff;
-    width: 200%;
-    height: 180%;
-    bottom: -200%;
-    left: -8%;
-    transform: rotate(10deg);
+    // background: linear-gradient(#fff0 0%, #000000 69%);
+    background-color: #fff;
+    bottom: 0;
   }
   //background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 69%);
   transform: translateY(30rem);
@@ -42,9 +39,9 @@ button {
   }
   .text-link {
     color: #fff;
-    font-size: 2.6rem;
+    font-size: clamp(1.6rem, 2vw, 2.2rem);
     line-height: 3.25rem;
-    font-weight: 500;
+    font-weight: 400;
     margin-left: 2rem;
   }
 
@@ -56,7 +53,7 @@ button {
       opacity: 0.8;
     }
     &.btn-arrow {
-      background: #1f2229;
+      background: hsla(0, 0%, 100%, 0.3);
       border-radius: 50%;
       width: 4.6rem;
       height: 4.6rem;
@@ -75,10 +72,19 @@ button {
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 600px) {
   .controls {
     padding: 1.6rem;
-    width: 100vw;
+    width: 90vw;
+    max-width: 35rem;
+    opacity: 1;
+    bottom: 1.8rem;
+    left: 50%;
+    transform: translate(-50%, 25rem);
+    &._viewed {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
     .buttons {
       justify-content: space-between;
     }
@@ -99,6 +105,7 @@ button {
       font-weight: 700 !important;
       border-radius: 6rem;
       padding: 1.3rem 5rem;
+      max-width: 19.5rem;
     }
   }
 }

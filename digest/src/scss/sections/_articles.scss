@@ -30,7 +30,7 @@
     display: inline-block;
     margin-bottom: 2.2rem;
     font-size: 3.2rem;
-    font-weight: 700;
+    font-weight: 400;
     color: #fff;
     position: relative;
     z-index: 2;
@@ -45,8 +45,8 @@
   }
 
   &__title {
-    font: 700 12.8rem/12.8rem $font1;
-    font-size: clamp(7rem, 12vh, 12.8rem);
+    font: 400 12.8rem/12.8rem $font1;
+    font-size: clamp(7rem, 10vh, 10.8rem);
     line-height: 1;
     font-family: $font1;
     color: #fff;
@@ -62,9 +62,9 @@
     z-index: 1;
     opacity: 0;
     transition: opacity 0.6s ease-in-out;
-    max-width: 60%;
+    max-width: 51%;
     // max-width: 100rem;
-    margin-left: 3rem;
+    margin-left: .3rem;
     // &.article__txt--short {
     //   width: 60rem;
     //   max-width: 65%;
@@ -78,7 +78,7 @@
     }
     ul {
       padding: 0;
-      margin: 0;
+      margin: 0 0 0 3rem;
       margin-bottom: 10rem;
     }
     li {
@@ -99,7 +99,7 @@
 
       &:first-of-type {
         &:before {
-          display: none;
+         // display: none;
         }
       }
       &:first-of-type {
@@ -142,24 +142,29 @@
     border-radius: 0 5.6rem 5.6rem 0;
     overflow: hidden;
     max-height: calc(100% - 14.4rem);
-    .article-bg {
+
+    //picture{display: block;margin: 0;width: 100%;}
+    img{height: 100%;}
+
+
+    .article-bg_mob,
+    .article-bg_desk {
       height: 100%;
-      display: block;
       margin: 0;
+    }
+    .article-bg_mob {
+      display: none;
+    }
+    .article-bg_desk {
+      display: block;
     }
     .article-img {
       height: calc(100vh - 12.4rem);
-
       // margin-top: 6rem;
       // margin-right: 6rem;
     }
-    &::before {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(to right, #000, #ffffff00);
-    }
+
+
   }
 
   &._viewed {
@@ -210,6 +215,12 @@
         margin: 0;
         height: auto;
       }
+      .article-bg_mob {
+        display: block;
+      }
+      .article-bg_desk {
+        display: none;
+      }
     }
 
     &__title,
@@ -232,7 +243,7 @@
     }
     &__title {
       padding: 0;
-      font-size: 3.2rem;
+      font-size: 3.2rem;font-weight:700;
       line-height: 3.84rem;
       margin-bottom: 1.8rem;
     }
@@ -248,7 +259,7 @@
         font-size: 1.6rem;
         line-height: 2rem;
       }
-      li {
+      li,p {
         background: #1f2229;
         border-radius: 1.2rem;
         padding: 1.6rem 2rem;
