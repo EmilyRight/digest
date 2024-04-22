@@ -34,11 +34,11 @@ body {
     color: #fff;
     // min-height: 100vh;
     box-sizing: border-box;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    // overflow: hidden;
+    // height: 100vh;
     @media (max-width: 780px) {
       height: auto;
     }
