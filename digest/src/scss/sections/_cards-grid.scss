@@ -13,7 +13,7 @@
     max-height: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 22% 22% 22% 22%;
-    grid-template-rows: 34vh 18vh 18vh;
+    grid-template-rows: 35vh 18vh 18vh;
     @media (max-width: 1000px) {
       grid-template-rows: 34vh 20vh 20vh;
     }
@@ -78,23 +78,23 @@
         }
 
         &_4 {
-          order: 7;
-          height: 19rem;
-        }
-
-        &_5 {
           order: 5;
           height: 19rem;
         }
 
-        &_6 {
+        &_5 {
           order: 6;
+          height: 26rem;
+        }
+
+        &_6 {
+          order: 3;
           height: 26.8rem;
         }
 
         &_7 {
-          order: 3;
-          height: 26.5rem;
+          order: 7;
+          height: 19rem;
         }
       }
     }
@@ -105,7 +105,7 @@
 
   .card {
     background: #1f2229;
-    border-radius: 2.2rem;
+    border-radius: 3.2rem;
     overflow: hidden;
     transform: translateZ(0);
     padding: 1.9vh 1.9vh 1.5vh;
@@ -117,6 +117,13 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    @media (max-width: 780px) {
+      border-radius: 2rem;
+      flex: none;
+      padding: 1.6rem;
+      min-height: 19rem;
+    }
+
     &__bg_mobile {
       display: none;
     }
@@ -160,6 +167,7 @@
       line-height: normal;
       font-weight: 500;
       max-height: 2.5rem;
+      margin-bottom: 2.8vh;
     }
     &__badges {
       display: flex;
@@ -185,13 +193,17 @@
         line-height: 3.36rem !important;
       }
     }
+    &-list {
+      margin: 0;
+      padding-left: 2rem;
 
+    }
     &__txt {
       position: relative;
-      z-index: 1;
-      p {
+      z-index: 10;
+      p,
+      li {
         margin: 0;
-        display: block;
         position: relative;
         font-size: clamp(1.6rem, 1.88vh, 2rem);
         line-height: 2.8vh;
@@ -232,7 +244,7 @@
     &--big {
       flex: 60% 1 1;
       .logo {
-        height: 5.8rem;
+        max-width: 100%;
         margin-bottom: 1.6rem;
         &_mobile {
           display: none;
@@ -297,7 +309,7 @@
       }
       &__txt {
         max-width: 100%;
-        p {
+        p, li {
           font-size: 1.6rem;
           line-height: 2.24rem;
         }
@@ -335,24 +347,36 @@
     padding-bottom: 0;
 
     .card__txt {
-      max-width: 60%;
+      max-width: 65%;
       padding-bottom: 1.5vh;
     }
     .logo {
-      height: 4.9rem;
+      height: 6.9rem;
     }
     .card__image {
       position: absolute;
       right: 0;
       bottom: 0;
-      height: 80%;
+      max-width: 15vw;
       width: 50%;
       display: flex;
       justify-content: flex-end;
+      z-index: 1;
       img {
         display: block;
-        max-height: 100%;
-        width: auto;
+        max-width: 100%;
+      }
+      &_mixx {
+        width: 5vw;
+        bottom: 49%;
+        right: 37%;
+        z-index: 0;
+        img {
+          display: block;
+          max-height: none;
+          width: 100%;
+          height: auto;
+        }
       }
     }
     @media (max-width: 780px) {
@@ -360,7 +384,18 @@
         padding-bottom: 1.6rem;
       }
       .logo {
-        height: 2.5rem;
+        height: 3.4rem;
+      }
+
+      .card__image {
+        right: -12%;
+        width: 54%;
+        max-width: 53vw;
+        &_mixx {
+          width: 19vw;
+          bottom: 44%;
+          right: 29%;
+        }
       }
     }
   }
