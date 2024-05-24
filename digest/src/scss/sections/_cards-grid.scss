@@ -13,7 +13,7 @@
     max-height: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 22% 22% 22% 22%;
-    grid-template-rows: 35vh 18vh 18vh;
+    grid-template-rows: 34vh 17vh 17vh;
     @media (max-width: 1000px) {
       grid-template-rows: 34vh 20vh 20vh;
     }
@@ -327,6 +327,7 @@
     }
     .card__txt {
       flex: 100% 1 1;
+      max-width: 70%;
     }
 
     .card__image {
@@ -334,6 +335,11 @@
       max-width: 51rem;
       align-self: flex-end;
       margin: 0 auto;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 70%;
       img {
         display: block;
         max-width: 100%;

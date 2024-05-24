@@ -104,6 +104,10 @@
     margin-bottom: 0.8rem;
     display: flex;
     max-width: 60rem;
+    picture {
+      display: block;
+      width: 100%;
+    }
     img {
       width: 100%;
       max-width: 100%;
@@ -182,6 +186,14 @@
         &:first-of-type {
           &:before {
             display: none;
+          }
+        }
+      }
+
+      &_extra {
+        li:first-of-type {
+          &:before {
+            display: block;
           }
         }
       }
