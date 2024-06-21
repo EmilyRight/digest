@@ -104,6 +104,10 @@
     margin-bottom: 0.8rem;
     display: flex;
     max-width: 60rem;
+    picture {
+      display: block;
+      width: 100%;
+    }
     img {
       width: 100%;
       max-width: 100%;
@@ -111,20 +115,15 @@
       margin: 0 auto;
       border-radius: 1.2rem;
     }
-    // @media (max-width: $mobile) {
-    //   picture {
-    //     width: 100%;
-    //   }
-    //   width: 100%;
-    // }
+
     @media (min-width: $mobile) {
       position: absolute;
       border-radius: 5.6rem;
       right: 7.2rem;
       top: 7.2rem;
       width: 42vw;
+      max-width: 30vw;
       height: auto;
-      max-width: 33vw;
       overflow: hidden;
 
       img {
@@ -138,7 +137,7 @@
     .text-link {
       color: inherit;
     }
-    .redtext {
+    .red-text {
       color: #ff641e;
     }
 
@@ -187,6 +186,14 @@
         &:first-of-type {
           &:before {
             display: none;
+          }
+        }
+      }
+
+      &_extra {
+        li:first-of-type {
+          &:before {
+            display: block;
           }
         }
       }
@@ -253,6 +260,14 @@
       .article-list,
       .article__title {
         max-width: 100%;
+      }
+
+      .article__pic {
+        display: none;
+      }
+
+      .article__txt {
+        max-width: 70%;
       }
     }
   }
