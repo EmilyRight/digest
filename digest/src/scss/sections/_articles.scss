@@ -21,7 +21,10 @@
   display: flex;
   flex-direction: column;
 
-
+  .no-wrap {
+    white-space: nowrap;
+  }
+  
   &._viewed {
     transform: translateX(-100vw);
     opacity: 1;
@@ -289,7 +292,7 @@
   }
 
   @media (min-width: $mobile) {
-    padding: 7vh 7.2rem;
+    padding: 7vh 7.2rem 7.5rem;
     &_no-image {
       .article-content {
         max-width: 70%;

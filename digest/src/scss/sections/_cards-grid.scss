@@ -330,6 +330,9 @@
     .card__txt {
       flex: 100% 1 1;
       max-width: 70%;
+      @media (max-width: 780px) {
+        max-width: 78%;
+      }
     }
 
     .card__image {
@@ -352,11 +355,12 @@
         max-height: 80%;
         display: flex;
         justify-content: center;
+        bottom: 1rem;
         img {
           display: block;
           max-width: none;
           height: 100%;
-          max-height: 26rem;
+          max-height: 36rem;
           margin: 0 auto;
         }
       }
@@ -397,10 +401,9 @@
       }
 
       .card__image {
-        right: -2rem;
         width: auto;
         max-width: none;
-        height: 70%;
+        height: 85%;
         img {
           display: block;
           max-height: 100%;
