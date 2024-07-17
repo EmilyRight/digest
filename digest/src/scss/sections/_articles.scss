@@ -21,6 +21,10 @@
   display: flex;
   flex-direction: column;
 
+  .no-wrap {
+    white-space: nowrap;
+  }
+  
   &._viewed {
     transform: translateX(-100vw);
     opacity: 1;
@@ -31,108 +35,129 @@
     }
   }
 
-  &__badges {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .article-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &__title {
+      color: #fff;
+      font-weight: 600;
+      font-family: $font1;
+      font-size: 3.2rem;
+      margin-bottom: 1.2rem;
+      line-height: 3.3rem;
+      order: 2;
+      @media (min-width: $mobile) {
+        font-size: clamp(3.2rem, 7vw, 8rem);
+        max-width: 50%;
+        line-height: 5.2vw;
+        font-weight: 600;
+        margin-bottom: 2.3vw;
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    &__text {
+      order: 4;
+      position: relative;
+      z-index: 1;
+      p,
+      li {
+        font-size: clamp(1.6rem, 2vw, 2.2rem);
+        color: #fff;
+        list-style: none;
+      }
+
+      @media (min-width: $mobile) {
+        max-width: 51%;
+      }
+    }
+
+    &__picture {
+      order: 3;
+      border-radius: 2rem;
+      align-self: center;
+      margin-bottom: 0.8rem;
+      display: flex;
+      max-width: 60rem;
+      picture {
+        display: block;
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 1.2rem;
+      }
+
+      @media (min-width: $mobile) {
+        position: absolute;
+        border-radius: 5.6rem;
+        right: 0;
+        top: 0;
+        width: 42vw;
+        max-width: 30vw;
+        height: auto;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .article-header__text {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    display: none;
+    @media (min-width: $mobile) {
+      display: block;
+    }
+  }
+
+  .badges {
     display: inline;
     max-width: fit-content;
     display: flex;
     gap: 0.8rem;
-  }
-  &__badge {
-    background: rgba(255, 255, 255, 0.3);
-    font-family: $font1;
-    margin-bottom: 0.8rem;
-    border-radius: 2.4rem;
-    display: block;
-    max-width: fit-content;
-    display: flex;
-    align-items: center;
-    font-size: clamp(1.2rem, 1.7vw, 2.2rem);
-    padding: 0.6rem 1.2rem;
-    line-height: normal;
-    font-weight: 500;
-    color: #fff;
-    position: relative;
-    z-index: 2;
-    order: 1;
-    max-height: 2.5rem;
-    @media (min-width: $mobile) {
-      padding: 0.8rem 1.6rem;
-      margin-bottom: 2.3vw;
-      max-height: 3.8rem;
-    }
-  }
 
-  &__title {
-    color: #fff;
-    font-weight: 600;
-    font-family: $font1;
-    font-size: 3.2rem;
-    margin-bottom: 1.2rem;
-    line-height: 3.3rem;
-    order: 2;
-    @media (min-width: $mobile) {
-      font-size: clamp(3.2rem, 7vw, 8rem);
-      max-width: 50%;
-      line-height: 5.2vw;
-      font-weight: 600;
-      margin-bottom: 2.3vw;
-      position: relative;
-      z-index: 1;
-    }
-  }
-
-  &__txt {
-    order: 4;
-    position: relative;
-    z-index: 1;
-    p,
-    li {
-      font-size: clamp(1.6rem, 2vw, 2.2rem);
+    &__item {
+      background: rgba(255, 255, 255, 0.3);
+      font-family: $font1;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+      border-radius: 2.4rem;
+      display: block;
+      max-width: fit-content;
+      display: flex;
+      align-items: center;
+      font-size: clamp(1.2rem, 1.7vw, 2.2rem);
+      padding: 0.6rem 1.2rem;
+      line-height: normal;
+      font-weight: 500;
       color: #fff;
-      list-style: none;
-    }
-
-    @media (min-width: $mobile) {
-      max-width: 51%;
-    }
-  }
-
-  &__pic {
-    order: 3;
-    border-radius: 2rem;
-    align-self: center;
-    margin-bottom: 0.8rem;
-    display: flex;
-    max-width: 60rem;
-    picture {
-      display: block;
-      width: 100%;
-    }
-    img {
-      width: 100%;
-      max-width: 100%;
-      display: block;
-      margin: 0 auto;
-      border-radius: 1.2rem;
-    }
-
-    @media (min-width: $mobile) {
-      position: absolute;
-      border-radius: 5.6rem;
-      right: 7.2rem;
-      top: 7.2rem;
-      width: 42vw;
-      max-width: 30vw;
-      height: auto;
-      overflow: hidden;
-
-      img {
-        width: 100%;
+      position: relative;
+      z-index: 2;
+      order: 1;
+      max-height: 2.5rem;
+      @media (min-width: $mobile) {
+        padding: 0.8rem 1.6rem;
+        margin-bottom: 2.3vw;
+        max-height: 3.8rem;
       }
     }
   }
 
-  .article__txt {
+  .article-text {
     //Типографика
     .text-link {
       color: inherit;
@@ -254,20 +279,33 @@
     }
   }
 
+  &_rtk {
+    .badges__item_tele2 {
+      display: none;
+    }
+  }
+
+  &_tele2 {
+    .badges__item_rtk {
+      display: none;
+    }
+  }
+
   @media (min-width: $mobile) {
-    padding: 7.2rem 7.2rem 7.7rem;
+    padding: 7vh 7.2rem 7.5rem;
     &_no-image {
+      .article-content {
+        max-width: 70%;
+      }
+
       .article-list,
-      .article__title {
+      .article-content__title,
+      .article-content__text {
         max-width: 100%;
       }
 
-      .article__pic {
+      .article-picture {
         display: none;
-      }
-
-      .article__txt {
-        max-width: 70%;
       }
     }
   }

@@ -37,12 +37,24 @@ button {
       transform: scale(-1, 1);
     }
   }
-  .text-link {
+  .btn-link {
     color: #fff;
     font-size: clamp(1.6rem, 2vw, 2.2rem);
     line-height: 3.25rem;
     font-weight: 400;
     margin-left: 2rem;
+    background-color: #000;
+    border: 1px solid #616265;
+    padding: 0.925rem 3.65rem;
+    border-radius: 5rem;
+    transition: .4s;
+    &:hover {
+      background-color: transparent;
+    }
+
+    @media (max-width: 780px) {
+      margin-left: 0rem;
+    }
   }
 
   .btn {

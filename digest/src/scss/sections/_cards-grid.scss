@@ -68,8 +68,9 @@
           height: 38rem;
         }
         &_2 {
-          order: 4;
-          height: 19rem;
+          order: 3;
+
+          height: 26.5rem;
         }
 
         &_3 {
@@ -78,17 +79,17 @@
         }
 
         &_4 {
-          order: 5;
+          order: 4;
           height: 19rem;
         }
 
         &_5 {
-          order: 6;
-          height: 26rem;
+          order: 5;
+          height: 19rem;
         }
 
         &_6 {
-          order: 3;
+          order: 6;
           height: 26.8rem;
         }
 
@@ -167,7 +168,8 @@
       line-height: normal;
       font-weight: 500;
       max-height: 2.5rem;
-      margin-bottom: 2.8vh;
+      text-transform: uppercase;
+      // margin-bottom: 2.8vh;
     }
     &__badges {
       display: flex;
@@ -196,7 +198,6 @@
     &-list {
       margin: 0;
       padding-left: 2rem;
-
     }
     &__txt {
       position: relative;
@@ -279,7 +280,7 @@
       }
       .logo {
         height: 3.5rem;
-        margin: 0;
+        margin-bottom: 0.5rem;
         &_mobile {
           display: block;
         }
@@ -302,14 +303,14 @@
           bottom: 0rem;
         }
       }
-
       &__title {
         font-size: 2.8rem;
         line-height: 3.36rem;
       }
       &__txt {
         max-width: 100%;
-        p, li {
+        p,
+        li {
           font-size: 1.6rem;
           line-height: 2.24rem;
         }
@@ -319,6 +320,9 @@
   .card_1 {
     justify-content: flex-start;
     padding-bottom: 0;
+    .card__header {
+      margin-bottom: 1.6rem;
+    }
     .card__content {
       height: 100%;
       width: 100%;
@@ -328,6 +332,9 @@
     .card__txt {
       flex: 100% 1 1;
       max-width: 70%;
+      @media (max-width: 780px) {
+        max-width: 78%;
+      }
     }
 
     .card__image {
@@ -345,6 +352,20 @@
         max-width: 100%;
         margin: 0 auto;
       }
+      @media (max-width: 780px) {
+        max-width: auto;
+        max-height: 80%;
+        display: flex;
+        justify-content: center;
+        bottom: 1rem;
+        img {
+          display: block;
+          max-width: none;
+          height: 100%;
+          max-height: 36rem;
+          margin: 0 auto;
+        }
+      }
     }
   }
 
@@ -353,18 +374,18 @@
     padding-bottom: 0;
 
     .card__txt {
-      max-width: 65%;
+      max-width: 70%;
       padding-bottom: 1.5vh;
     }
     .logo {
-      height: 6rem;
+      height: 4.6rem;
     }
     .card__image {
       position: absolute;
       right: 0;
       bottom: 0;
       max-width: 13vw;
-      width: 50%;
+      width: 40%;
       display: flex;
       justify-content: flex-end;
       z-index: 1;
@@ -372,49 +393,24 @@
         display: block;
         max-width: 100%;
       }
-      &_mixx {
-        width: 5vw;
-        bottom: 49%;
-        right: 37%;
-        z-index: 0;
-        img {
-          display: block;
-          max-height: none;
-          width: 100%;
-          height: auto;
-        }
-      }
     }
     @media (max-width: 780px) {
       .card__txt {
         padding-bottom: 1.6rem;
       }
       .logo {
-        height: 3rem;
+        height: 2.3rem;
       }
 
       .card__image {
-        right: -2rem;
-        width:auto;
+        width: auto;
         max-width: none;
-        height: 70%;
+        height: 85%;
         img {
           display: block;
           max-height: 100%;
           width: auto;
           max-width: none;
-        }
-        &_mixx {
-          height: auto;
-          width: 7rem;
-          bottom: 38%;
-          right: 26%;
-          img {
-            display: block;
-            max-height: none;
-            width: 100%;
-            height: auto;
-          }
         }
       }
     }
@@ -422,15 +418,16 @@
 
   .card_6 {
     position: relative;
-    .card__title, .card__txt {
+    .card__title,
+    .card__txt {
       position: relative;
       z-index: 1;
     }
     .card__image {
       position: absolute;
       right: 0;
-      top: -1.5rem;
-      max-width: 60%;
+      bottom: 0;
+      max-width: 35%;
       z-index: 0;
       img {
         display: block;
@@ -438,11 +435,9 @@
       }
 
       @media (max-width: 768px) {
-        max-width: 70%;
-        top: -2rem;
+        display: none;
       }
     }
-
   }
 
   .news-date {
