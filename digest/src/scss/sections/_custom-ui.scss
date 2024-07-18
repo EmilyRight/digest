@@ -51,6 +51,10 @@ button {
     &:hover {
       background-color: transparent;
     }
+
+    @media (max-width: 780px) {
+      margin-left: 0rem;
+    }
   }
 
   .btn {
