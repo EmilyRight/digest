@@ -44,6 +44,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    @media (min-width: $mobile) {
+      margin-bottom: 12rem;
+    }
     &__title {
       color: #fff;
       font-weight: 600;
