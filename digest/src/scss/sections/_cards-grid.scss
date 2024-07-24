@@ -357,12 +357,12 @@
         max-height: 80%;
         display: flex;
         justify-content: center;
-        bottom: 1rem;
+        bottom: 0rem;
         img {
           display: block;
           max-width: none;
           height: 100%;
-          max-height: 36rem;
+          max-height: 25rem;
           margin: 0 auto;
         }
       }
@@ -384,8 +384,8 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      max-width: 13vw;
-      width: 40%;
+      max-width: 17vw;
+      width: 90%;
       display: flex;
       justify-content: flex-end;
       z-index: 1;
