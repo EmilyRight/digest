@@ -389,6 +389,15 @@
       display: flex;
       justify-content: flex-end;
       z-index: 1;
+
+      z-index: 1;
+      justify-content: flex-end;
+      width: 90%;
+      max-width: 21vw;
+      display: flex;
+      position: absolute;
+      bottom: -8rem;
+      right: -2.5rem;
       img {
         display: block;
         max-width: 100%;
@@ -406,6 +415,8 @@
         width: auto;
         max-width: none;
         height: 85%;
+        bottom: -2rem;
+        right: -2rem;
         img {
           display: block;
           max-height: 100%;
