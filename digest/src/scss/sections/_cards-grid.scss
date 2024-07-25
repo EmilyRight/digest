@@ -152,6 +152,7 @@
     &__content {
       justify-self: flex-end;
     }
+    
     &__header {
       width: 100%;
       display: flex;
@@ -338,13 +339,12 @@
     }
 
     .card__image {
-      width: 100%;
-      max-width: 51rem;
-      align-self: flex-end;
-      margin: 0 auto;
       position: absolute;
       bottom: 0;
-      max-width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 40rem;
       img {
         display: block;
         max-width: 100%;
@@ -356,6 +356,9 @@
         display: flex;
         justify-content: center;
         bottom: 0rem;
+        transform: none;
+        left: auto;
+        right: 0rem;
         img {
           display: block;
           max-width: none;
@@ -454,7 +457,8 @@
       position: absolute;
       right: 0%;
       top: 0;
-      max-width: 80%;
+      width: 80%;
+      max-width: 30rem;
       z-index: 0;
       img {
         display: block;
