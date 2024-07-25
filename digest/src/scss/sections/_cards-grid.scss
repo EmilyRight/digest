@@ -152,7 +152,7 @@
     &__content {
       justify-self: flex-end;
     }
-    
+
     &__header {
       width: 100%;
       display: flex;
@@ -344,7 +344,7 @@
       left: 50%;
       transform: translateX(-50%);
       width: 90%;
-      max-width: 40rem;
+      max-width: 25vw;
       img {
         display: block;
         max-width: 100%;
@@ -458,7 +458,7 @@
       right: 0%;
       top: 0;
       width: 80%;
-      max-width: 30rem;
+      max-width: 20vw;
       z-index: 0;
       img {
         display: block;
