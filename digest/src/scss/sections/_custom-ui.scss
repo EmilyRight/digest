@@ -47,7 +47,8 @@ button {
     border: 1px solid #616265;
     padding: 0.925rem 3.65rem;
     border-radius: 5rem;
-    transition: .4s;
+    transition: 0.4s;
+    user-select: none;
     &:hover {
       background-color: transparent;
     }
