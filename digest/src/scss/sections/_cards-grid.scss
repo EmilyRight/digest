@@ -152,6 +152,7 @@
     &__content {
       justify-self: flex-end;
     }
+
     &__header {
       width: 100%;
       display: flex;
@@ -338,31 +339,31 @@
     }
 
     .card__image {
-      width: 100%;
-      max-width: 51rem;
-      align-self: flex-end;
-      margin: 0 auto;
       position: absolute;
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      max-width: 70%;
+      width: 90%;
+      max-width: 25vw;
       img {
         display: block;
         max-width: 100%;
         margin: 0 auto;
       }
       @media (max-width: 780px) {
-        max-width: auto;
+        max-width: 70%;
         max-height: 80%;
         display: flex;
         justify-content: center;
-        bottom: 1rem;
+        bottom: 0rem;
+        transform: none;
+        left: auto;
+        right: 0rem;
         img {
           display: block;
           max-width: none;
           height: 100%;
-          max-height: 36rem;
+          max-height: 25rem;
           margin: 0 auto;
         }
       }
@@ -384,11 +385,20 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      max-width: 13vw;
-      width: 40%;
+      max-width: 17vw;
+      width: 90%;
       display: flex;
       justify-content: flex-end;
       z-index: 1;
+
+      z-index: 1;
+      justify-content: flex-end;
+      width: 90%;
+      max-width: 21vw;
+      display: flex;
+      position: absolute;
+      bottom: -8rem;
+      right: -2.5rem;
       img {
         display: block;
         max-width: 100%;
@@ -406,6 +416,8 @@
         width: auto;
         max-width: none;
         height: 85%;
+        bottom: -2rem;
+        right: -2rem;
         img {
           display: block;
           max-height: 100%;
@@ -437,6 +449,24 @@
       @media (max-width: 768px) {
         display: none;
       }
+    }
+  }
+
+  .card_7 {
+    .card__image {
+      position: absolute;
+      right: 0%;
+      top: 0;
+      width: 80%;
+      max-width: 20vw;
+      z-index: 0;
+      img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 
