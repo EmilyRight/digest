@@ -423,7 +423,6 @@
   .card_6 {
     position: relative;
     .card__content {
-      max-width: 70%;
       @media (max-width: 768px) {
         max-width: 100%;
       }
@@ -431,7 +430,7 @@
     .card__title,
     .card__txt {
       position: relative;
-      z-index: 1;
+      max-width: 65%;
     }
     .card__image {
       position: absolute;
@@ -443,9 +442,9 @@
         display: block;
         max-width: 100%;
       }
-
       @media (max-width: 768px) {
-        display: none;
+        right: -1rem;
+        max-width: 14rem;
       }
     }
   }
