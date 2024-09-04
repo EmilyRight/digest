@@ -318,6 +318,7 @@
       }
     }
   }
+
   .card_1 {
     justify-content: flex-start;
     padding-bottom: 0;
@@ -359,6 +360,46 @@
         transform: none;
         left: auto;
         right: 0rem;
+        img {
+          display: block;
+          max-width: none;
+          height: 100%;
+          max-height: 25rem;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .card_2 {
+    .card__txt {
+      @media (max-width: 780px) {
+        max-width: 70%;
+      }
+    }
+    .card__image {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 25vw;
+      display: none;
+      img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 780px) {
+        max-width: 70%;
+        max-height: 80%;
+        display: flex;
+        justify-content: center;
+        transform: none;
+        bottom: 6rem;
+        left: auto;
+        right: -8rem;
         img {
           display: block;
           max-width: none;
