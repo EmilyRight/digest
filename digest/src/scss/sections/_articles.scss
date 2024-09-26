@@ -71,7 +71,8 @@
       position: relative;
       z-index: 1;
       p,
-      li {
+      li,
+      span {
         font-size: clamp(1.6rem, 2vw, 2.2rem);
         color: #fff;
         list-style: none;
@@ -184,6 +185,24 @@
     }
   }
 
+  .article-text_with-list {
+    @media (max-width: $mobile) {
+      background-color: $color-dark;
+      margin-bottom: 10rem;
+      position: relative;
+      padding: 1.2rem 1.6rem 1.6rem;
+      border-radius: 2rem;
+    }
+
+    .article-list_inner {
+      margin-bottom: 0;
+      margin-top: 1rem;
+    }
+    span {
+      color: #fff;
+    }
+  }
+
   .article-list {
     padding: 0;
     margin: 0;
@@ -257,6 +276,9 @@
         padding: 0;
         font-weight: 400;
         line-height: 2.15vw;
+        &::before {
+          margin-top: 1vw;
+        }
         &:first-of-type {
           &:before {
             display: block;
@@ -293,12 +315,12 @@
   }
 
   &_rtk {
-    .badges__item_tele2 {
+    .badges__item_t2 {
       display: none;
     }
   }
 
-  &_tele2 {
+  &_t2 {
     .badges__item_rtk {
       display: none;
     }
