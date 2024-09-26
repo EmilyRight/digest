@@ -1,10 +1,9 @@
 .footer {
   display: none;
   @media (max-width: 780px) {
-    // display: block;
+    display: block;
     padding: 1.6rem 0 2.4rem;
     .other-news {
-      display: none;
       &_mobile {
         display: flex;
         justify-content: flex-end;
