@@ -191,6 +191,8 @@
       line-height: 3.5vh;
       margin-bottom: 1vh;
       font-weight: 500;
+      position: relative;
+      z-index: 1;
       @media (max-width: 780px) {
         font-size: 2.8rem !important;
         line-height: 3.36rem !important;
@@ -333,7 +335,7 @@
     }
     .card__txt {
       flex: 100% 1 1;
-      // max-width: 70%;
+      max-width: 70%;
       @media (max-width: 780px) {
         max-width: 78%;
       }
@@ -345,7 +347,7 @@
       left: 50%;
       transform: translateX(-50%);
       width: 90%;
-      max-width: 25vw;
+      max-width: 22vw;
       img {
         display: block;
         max-width: 100%;
@@ -357,9 +359,9 @@
         display: flex;
         justify-content: center;
         bottom: 0rem;
-        transform: none;
-        left: auto;
-        right: 0rem;
+        // transform: none;
+        // left: auto;
+        // right: 0rem;
         img {
           display: block;
           max-width: none;
@@ -373,18 +375,17 @@
 
   .card_2 {
     .card__txt {
+      max-width: 70%;
       @media (max-width: 780px) {
-        max-width: 70%;
       }
     }
     .card__image {
       position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 90%;
-      max-width: 25vw;
-      display: none;
+      max-width: 15vw;
+      position: absolute;
+      top: 0rem;
+      right: -4rem;
+
       img {
         display: block;
         max-width: 100%;
@@ -474,11 +475,11 @@
       max-width: 65%;
     }
     .card__image {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      max-width: 40%;
       z-index: 0;
+      max-width: 80%;
+      position: absolute;
+      top: -3rem;
+      right: 0;
       img {
         display: block;
         max-width: 100%;
