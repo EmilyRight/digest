@@ -171,6 +171,7 @@
     }
 
     @media (max-width: $mobile) {
+      margin-bottom: 10rem;
       li,
       p {
         background-color: $color-dark;
@@ -178,9 +179,6 @@
         position: relative;
         padding: 1.2rem 1.6rem 1.6rem;
         border-radius: 2rem;
-      }
-      p:last-of-type {
-        margin-bottom: 10rem;
       }
     }
   }
@@ -213,6 +211,7 @@
       padding-left: 4.2rem;
       margin-left: -1.2rem;
       li {
+        position: relative;
         background-color: transparent;
         margin-bottom: 2.4rem;
         padding: 0;
@@ -309,7 +308,7 @@
       display: inline-block;
       position: absolute;
       width: 3.5rem;
-      left: -0.5rem;
+      left: -3.5rem;
       top: -1rem;
     }
   }
