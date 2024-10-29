@@ -183,7 +183,7 @@
       }
     }
 
-    .card_rtk{
+    .card_rtk {
       .card-badge_t2 {
         display: none;
       }
@@ -489,18 +489,22 @@
     }
     .card__image {
       z-index: 0;
-      max-width: 18vw;
+      max-width: 12vw;
       position: absolute;
-      top: 2rem;
-      right: 2rem;
+      top: -1rem;
+      right: 0rem;
       img {
         display: block;
         max-width: 100%;
       }
       @media (max-width: 768px) {
-        max-width: 8rem;
+        width: 15rem;
+        max-width: none;
         top: 1rem;
-        right: 1.5rem;
+        img {
+          max-width: none;
+          width: 100%;
+        }
       }
     }
   }
