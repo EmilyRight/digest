@@ -177,13 +177,13 @@
       gap: 1rem;
     }
 
-    .card_t2 {
+    &.card_t2 {
       .card-badge_rtk {
         display: none;
       }
     }
 
-    .card_rtk {
+    &.card_rtk {
       .card-badge_t2 {
         display: none;
       }
@@ -360,7 +360,7 @@
       left: 50%;
       transform: translateX(-50%);
       width: 90%;
-      max-width: 20vw;
+      max-width: 17vw;
 
       img {
         display: block;
@@ -493,6 +493,7 @@
       position: absolute;
       top: -1rem;
       right: 0rem;
+      display: none;
       img {
         display: block;
         max-width: 100%;
@@ -523,7 +524,7 @@
       }
 
       @media (max-width: 768px) {
-        max-width: 15rem;
+        max-width: 14rem;
       }
     }
   }
